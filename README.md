@@ -3,3 +3,4 @@
 * Both Blind and Non-blind watermarking methods implemented.
 * Create a database to store the image id, image, LL band (In case of non-blind method) and best block's number.
 * Tested with different type of image processing attacks.
+* Connect the database to matlab.
