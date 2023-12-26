@@ -1,6 +1,6 @@
-rgbImage= imread("C:\Users\sanma\OneDrive\Documents\MATLAB\Real_time_image.jpg");
+rgbImage= imread("path of cover image");
 rgbImage1=rgbImage;
-fgrprt= imread("C:\Users\sanma\OneDrive\Documents\MATLAB\fingerprint3.tif");
+fgrprt= imread("path of fingerprint image");
 BW_fgrprt1=rgb2gray(fgrprt);
 BW_fgrprt=imbinarize(BW_fgrprt1);
 
@@ -337,7 +337,7 @@ function BER=bitErrorRate(originalImage, watermarkedImage)
 end
 
 function morphingWatermarkedImage = morphing(watermarkedImage)
-    morphing_image = imread("C:\Users\sanma\OneDrive\Documents\MATLAB\lena_color_512.tif");
+    morphing_image = imread("path of the a image to be morphed with");
     [Rw, Cw, Cow]=size(watermarkedImage);
     [Rm, Cm, Com]=size(morphing_image);
     if (Rw~=Rm) || (Cw~=Cm) || (Cow~=Com)
